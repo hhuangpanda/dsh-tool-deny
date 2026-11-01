@@ -1,9 +1,17 @@
 # dsh-tool-deny
 
-[English](README.md) | 中文
+<div align="center">
 
-[![npm version](https://img.shields.io/npm/v/dsh-tool-deny?color=5b8def&label=npm)](https://www.npmjs.com/package/dsh-tool-deny)
-[![CI](https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml/badge.svg)](https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml)
+<p>
+<a href="README.md">English</a> · <strong>简体中文</strong>
+</p>
+
+<p>
+<a href="https://www.npmjs.com/package/dsh-tool-deny"><img alt="npm version" src="https://img.shields.io/npm/v/dsh-tool-deny?color=5b8def&label=npm"></a>
+<a href="https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml/badge.svg"></a>
+</p>
+
+</div>
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（dsh）中的每个智能体预设（preset）选择可用的工具。
 

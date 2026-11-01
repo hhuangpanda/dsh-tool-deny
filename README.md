@@ -1,9 +1,17 @@
 # dsh-tool-deny
 
-English | [中文](README.zh.md)
+<div align="center">
 
-[![npm version](https://img.shields.io/npm/v/dsh-tool-deny?color=5b8def&label=npm)](https://www.npmjs.com/package/dsh-tool-deny)
-[![CI](https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml/badge.svg)](https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml)
+<p>
+<strong>English</strong> · <a href="README.zh.md">简体中文</a>
+</p>
+
+<p>
+<a href="https://www.npmjs.com/package/dsh-tool-deny"><img alt="npm version" src="https://img.shields.io/npm/v/dsh-tool-deny?color=5b8def&label=npm"></a>
+<a href="https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml/badge.svg"></a>
+</p>
+
+</div>
 
 Choose which tools each agent preset gets in [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (dsh).
 
