@@ -110,7 +110,7 @@ At the root, `hideSections` applies to every preset named in `hideByPreset`. The
 
 - **Failures are quiet.** If you remove the row or the plugin stops loading, the tools come back with no error. Don't rely on it as your only safeguard for a sensitive agent.
 - **Lists are by name.** A new tool added by a plugin update stays visible until you add it.
-- **Unknown names are skipped.** A tool name that doesn't exist logs a warning and is otherwise ignored, so check your spelling.
+- **Unknown names are skipped.** A tool name in `hide` or `hideByPreset` that doesn't exist logs a warning and is otherwise ignored. A misspelled `deny` name gets no warning and simply never matches, so check your spelling.
 - **It hides tools, not plugins.** The plugin keeps running. Anything it does beyond its tools, such as acting as the provider behind `web_search`, is unchanged.
 - **Preset switches can drop tools.** Switching a new session to another preset and back can leave out `subagent`, which is dsh behavior. Starting a fresh session restores it.
 
