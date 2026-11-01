@@ -2,6 +2,9 @@
 
 [English](README.md) | 中文
 
+[![npm version](https://img.shields.io/npm/v/dsh-tool-deny?color=5b8def&label=npm)](https://www.npmjs.com/package/dsh-tool-deny)
+[![CI](https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml/badge.svg)](https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml)
+
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（dsh）中的每个智能体预设（preset）选择可用的工具。
 
 在 profile 根部加载的插件会全局注册其工具，因此所有预设都会继承这些工具。预设可以添加插件，却没有移除全局工具的设置。dsh-tool-deny 用几行 YAML 补上了这个空缺。
