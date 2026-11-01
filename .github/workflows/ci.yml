@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Syntax check
+        run: node --check index.js
+
+      - name: Test
+        run: npm test
+
+      - name: Check npm package contents
+        run: npm pack --dry-run
+
+  required:
+    # Keep the branch-protection check name stable across matrix changes.
+    name: Validate
+    needs: validate
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require every platform to pass
+        env:
+          VALIDATION_RESULT: ${{ needs.validate.result }}
+        run: test "$VALIDATION_RESULT" = success
