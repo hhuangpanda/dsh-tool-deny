@@ -11,6 +11,8 @@
 <a href="https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml/badge.svg"></a>
 </p>
 
+<img alt="dsh-tool-deny" src="assets/splash.png" width="800">
+
 </div>
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（dsh）中的每个智能体预设（preset）选择可用的工具。

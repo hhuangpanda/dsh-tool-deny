@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0}
+html,body{width:1600px;height:900px;overflow:hidden}
+body{background:#0f1420;color:#e6e9f0;font-family:"Segoe UI",system-ui,sans-serif;padding:84px 96px;display:grid;grid-template-columns:620px 1fr;gap:72px;align-items:center;
+ background-image:radial-gradient(circle at 85% 15%,#1d2a4a 0,transparent 45%),radial-gradient(circle at 10% 95%,#1a2236 0,transparent 40%)}
+h1{font:700 64px/1.05 Consolas,monospace;letter-spacing:-1px}
+h1 span{color:#5b8def}
+.tag{font-size:30px;line-height:1.35;color:#b7bfd1;margin:22px 0 40px}
+pre{background:#161d2e;border:1px solid #27324a;border-radius:16px;padding:28px 32px;font:22px/1.6 Consolas,monospace;color:#c9d1e3}
+.k{color:#7fb0ff}.s{color:#9fd8a8}.c{color:#6b7690}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:#161d2e;border:1px solid #27324a;border-radius:18px;padding:28px}
+.card h2{font:600 18px/1 "Segoe UI";letter-spacing:2px;text-transform:uppercase;color:#8a94ab;margin-bottom:6px}
+.card h3{font:600 32px/1.2 Consolas,monospace;margin-bottom:22px}
+.t{display:flex;align-items:center;justify-content:space-between;font:22px/1 Consolas,monospace;padding:15px 18px;border-radius:10px;background:#1c2539;margin-top:10px}
+.t b{font:600 15px/1 "Segoe UI";letter-spacing:1px;text-transform:uppercase;padding:7px 10px;border-radius:6px}
+.on b{background:#1f3b2a;color:#8fe0a6}
+.off{background:transparent;border:1px dashed #3a4560;color:#5d6780}
+.off span{text-decoration:line-through}
+.off b{background:#3a2228;color:#f09aa8}
+</style></head><body>
+<div>
+  <h1>dsh-<span>tool</span>-deny</h1>
+  <p class="tag">Hide or refuse tools per agent preset in DeepSeek Harness.</p>
+<pre><span class="c"># cordis.patch.yml</span>
+- <span class="k">insert</span>:
+    - <span class="k">id</span>: <span class="s">tool-deny-root</span>
+      <span class="k">name</span>: <span class="s">dsh-tool-deny</span>
+      <span class="k">config</span>:
+        <span class="k">hideByPreset</span>:
+          <span class="k">minimal</span>:
+            - <span class="s">image_search</span>
+            - <span class="s">translate</span></pre>
+</div>
+<div class="cols">
+  <div class="card"><h2>Preset</h2><h3>default</h3>
+    <div class="t on"><span>read_file</span><b>listed</b></div>
+    <div class="t on"><span>bash</span><b>listed</b></div>
+    <div class="t on"><span>image_search</span><b>listed</b></div>
+    <div class="t on"><span>translate</span><b>listed</b></div>
+  </div>
+  <div class="card"><h2>Preset (custom)</h2><h3>minimal</h3>
+    <div class="t on"><span>read_file</span><b>listed</b></div>
+    <div class="t on"><span>bash</span><b>listed</b></div>
+    <div class="t off"><span>image_search</span><b>hidden</b></div>
+    <div class="t off"><span>translate</span><b>hidden</b></div>
+  </div>
+</div>
+</body></html>
