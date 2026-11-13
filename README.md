@@ -34,7 +34,10 @@ Hidden tools cost no tokens, because their definitions are never sent to the mod
 
 ## Requirements
 
-Tested on dsh 0.2.1-rc.4.
+| Plugin version | Supported dsh versions |
+| --- | --- |
+| 0.1.2 and later | 0.2.1-rc.1 to the latest 0.2 release |
+| 0.1.1 and earlier | 0.2.1-rc.1 to 0.2.2-rc.1 (`hideByPreset` does nothing on 0.2.2-rc.2 and later) |
 
 ## Install
 

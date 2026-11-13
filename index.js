@@ -50,7 +50,7 @@ function hideByPreset(ctx, toolNamesByPreset, sectionNames) {
       if (toolNames) undoByAgent.set(agent, hide(agent.ctx, sctx.logger, toolNames, sectionNames))
     }
 
-    for (const agent of sctx.agents.roots()) refresh(agent)
+    for (const agent of sctx.agents.list()) refresh(agent)
     sctx.on("agent/created", ({ agent }) => {
       refresh(agent)
       return undefined

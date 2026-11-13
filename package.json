@@ -1,6 +1,6 @@
 {
   "name": "dsh-tool-deny",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Hide or refuse named tools per agent preset in DeepSeek Harness. Can also hide system prompts added by tools. Useful when plugins force tools on all agent presets.",
   "license": "MIT",
   "publishConfig": {
