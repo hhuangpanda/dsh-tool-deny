@@ -9,6 +9,7 @@
 <p>
 <a href="https://www.npmjs.com/package/dsh-tool-deny"><img alt="npm version" src="https://img.shields.io/npm/v/dsh-tool-deny?color=5b8def&label=npm"></a>
 <a href="https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/hhuangpanda/dsh-tool-deny/actions/workflows/ci.yml/badge.svg"></a>
+<a href="https://awesome-dsh-plugin.com/p/hhuangpanda/dsh-tool-deny/"><img alt="Awesome DSH Plugin" src="https://awesome-dsh-plugin.com/badge.svg"></a>
 </p>
 
 <img alt="dsh-tool-deny" src="assets/splash.png" width="800">
@@ -34,7 +35,10 @@
 
 ## 环境要求
 
-已在 dsh 0.2.1-rc.4 上测试。
+| 插件版本 | 支持的 dsh 版本 |
+| --- | --- |
+| 0.1.2 及更高 | 0.2.1-rc.1 至最新的 0.2 版本 |
+| 0.1.1 及更早 | 0.2.1-rc.1 至 0.2.2-rc.1（在 0.2.2-rc.2 及以上版本中 `hideByPreset` 不生效） |
 
 ## 安装
 
